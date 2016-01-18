@@ -14,9 +14,18 @@ baseurl: "/jekyll-blog" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: ppramodrh
 github_username:  pramodrhegde
-facebook_username: ppramodrh
 
 permalink: /:categories/:title
+
+links:
+ - title: about
+   url: /about
+ - title: work
+   url: /work
+ - title: articles
+   url: /articles
+ - title: hire-me
+   url: /hire-me
 
 # Build settings
 markdown: kramdown
