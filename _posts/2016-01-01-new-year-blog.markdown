@@ -3,6 +3,7 @@ layout: post
 title:  "Happy New Year 2016"
 date:   2016-01-01 13:22:43 +0530
 categories: jekyll update
+author: Pramod
 ---
 
 # Lecto et fugae tinctam
