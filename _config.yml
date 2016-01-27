@@ -18,14 +18,12 @@ github_username:  pramodrhegde
 permalink: /:categories/:title
 
 links:
- - title: about
-   url: /about
+ - title: Home
+   url: /
  - title: work
    url: /work
- - title: articles
-   url: /articles
- - title: hire-me
-   url: /hire-me
+ - title: About
+   url: /about
 
 # Build settings
 markdown: kramdown
