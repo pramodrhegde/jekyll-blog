@@ -1,4 +1,11 @@
 /**
+ * Box Sizing to border box
+ */
+ *{
+    box-sizing:border-box;
+ }
+
+/**
  * Reset some basic elements
  */
 body, h1, h2, h3, h4, h5, h6,
@@ -85,7 +92,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
 
-
+/**
+ * unordered lists
+ */
+ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
 
 /**
  * Links
@@ -150,30 +164,6 @@ pre {
     }
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
-}
-
-
-
 /**
  * Clearfix
  */
@@ -186,7 +176,9 @@ pre {
     }
 }
 
-
+.hidden{
+    display:none;
+}
 
 /**
  * Icons

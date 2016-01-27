@@ -1,12 +1,14 @@
 <footer class="site-footer">
-	<div class="footer-text">
-		<p>Blog - All Rights reserved.</p>
-	</div>
-	<div class="footer-links">
-		<ul>
-			{% for link in site.links %}
-		      <li><a href="{{link.url}}">{{link.title}}</a></li>
-		    {% endfor %}
-		</ul>
+	<div class="footer-container">
+		<div class="footer-text">
+			<p>Blog - All Rights reserved.</p>
+		</div>
+		<div class="footer-links">
+			<ul>
+				{% for link in site.links %}
+			      <li><a href="{{link.url}}">{{link.title}}</a></li>
+			    {% endfor %}
+			</ul>
+		</div>
 	</div>
 </footer>
