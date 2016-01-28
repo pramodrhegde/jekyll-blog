@@ -19,13 +19,34 @@ header{
     position:relative;
   }
 }
+
+#logo{
+  display:inline-block;
+  margin-top:10px;
+}
+
 nav{
-  height:100px;
+  height:150px;
   background:#F25F5C;
   position:absolute;
-  bottom:-100px;
+  bottom:-150px;
   left:0;
   width:100%;
+
+  ul{
+    height:inherit;
+    padding:15px 15px;
+
+    li{
+        margin:15px;
+
+        a{
+            display:inline-block;
+            text-transform:uppercase;
+            font-size:15px;
+        }
+    }
+  }
 }
 .nav-toggle-button{
   width:44px;
@@ -40,6 +61,15 @@ nav{
   margin-left:-22px;
   padding-top:12px;
   font-size:22px;
+
+  &:after{
+    content:"";
+    border-top:5px solid #fff;
+    border-bottom:5px solid transparent;
+    border-right:5px solid transparent;
+    border-left:5px solid transparent;
+    transform:rotate(90deg);
+  }
 }
 main{
     min-height:100%;
